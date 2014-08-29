@@ -1,0 +1,23 @@
+oro_system_configuration:
+    groups:
+        hex_brain_user_import_settings:
+            icon:   icon-download-alt
+            title:  'User Import'
+        hex_brain_user_import_general_settings:
+            title:  'General'
+    fields:
+        hex_brain_user_import.default_password:
+            type: text
+            options:
+                label: 'Default Password'
+    tree:
+        system_configuration:
+            platform:
+                children:
+                    general_setup:
+                        children:
+                            hex_brain_user_import_settings:
+                                children:
+                                    hex_brain_user_import_general_settings:
+                                        children:
+                                            - hex_brain_user_import.default_password

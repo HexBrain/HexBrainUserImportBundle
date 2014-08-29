@@ -1,0 +1,4 @@
+user_import_bundle:
+    resource:     "../../vendor/oro/platform/src/Oro/Bundle/UserBundle/Controller"
+    type:         annotation
+    prefix:       /user

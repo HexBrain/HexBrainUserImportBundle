@@ -1,0 +1,2 @@
+bundles:
+    - { name: HexBrain\Bundle\UserImportBundle\HexBrainUserImportBundle, priority: 200 }
