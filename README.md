@@ -3,7 +3,7 @@ OroCRM User Import
 
 This bundle adds user import feature to OroCRM which allows import user from CSV files.
 
-HexBrain is working on improvements for this bundle, if you find a bug or error.
+HexBrain is working on improvements for this bundle, if you find a bug or error please create a [Pull request][2].
 
 Requirements
 ------------
@@ -30,7 +30,7 @@ Follow `System > Package Manager` to install it from [OroCRM Marketplace][1]
 
 Add as dependency in composer
 ```bash
-composer require hexbrain/hexbrain/orocrm-userimport-bundle:dev-master
+composer require hexbrain/orocrm-userimport-bundle:dev-master
 ```
 
 In addition you will need to run platform update
@@ -39,3 +39,4 @@ php app/console oro:platform:update
 ```
 
 [1]: http://www.orocrm.com/marketplace/oro-crm/package/orocrm-userimport-bundle
+[2]: https://github.com/HexBrain/HexBrainUserImportBundle/pulls
