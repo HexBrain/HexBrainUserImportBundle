@@ -12,7 +12,7 @@
     ],
     "autoload": {
         "psr-0": {
-            "HexBrain\\UserImportBundle": "."
+            "HexBrain\\Bundle\\UserImportBundle": "scr/"
         }
     },
     "target-dir": "src/HexBrain/Bundle/UserImportBundle",
