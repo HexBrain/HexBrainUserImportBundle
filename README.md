@@ -38,5 +38,5 @@ In addition you will need to run platform update
 php app/console oro:platform:update
 ```
 
-[1]: http://www.orocrm.com/marketplace/oro-crm/package/orocrm-userimport-bundle
+[1]: http://marketplace.orocrm.com/package/user-import
 [2]: https://github.com/HexBrain/HexBrainUserImportBundle/pulls
