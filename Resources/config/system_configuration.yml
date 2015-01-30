@@ -7,7 +7,7 @@ oro_system_configuration:
             title:  'General'
     fields:
         hex_brain_user_import.default_password:
-            type: text
+            data_type: text,
             options:
                 label: 'Default Password'
     tree:

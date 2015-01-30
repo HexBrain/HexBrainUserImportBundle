@@ -19,12 +19,13 @@ class UserAddOrReplaceStrategy extends ConfigurableAddOrReplaceStrategy
      * @param ConfigManager $configManager
      * @param EncoderFactoryInterface $encoderFactory
      */
-    public function __construct(ImportStrategyHelper $helper, FieldHelper $fieldHelper, ConfigManager $configManager, EncoderFactoryInterface $encoderFactory)
+    public function __construct(ImportStrategyHelper $helper, FieldHelper $fieldHelper, $databaseHelper, ConfigManager $configManager, EncoderFactoryInterface $encoderFactory)
     {
         $this->strategyHelper = $helper;
         $this->fieldHelper = $fieldHelper;
         $this->configManager = $configManager;
         $this->encoderFactory = $encoderFactory;
+        $this->databaseHelper = $databaseHelper;
     }
 
     /**
