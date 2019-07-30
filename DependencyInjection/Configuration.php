@@ -23,9 +23,9 @@ class Configuration implements ConfigurationInterface
 
         SettingsBuilder::append(
             $rootNode,
-            array(
-                'default_password' => array('value' => null, 'type' => 'password'),
-            )
+            [
+                'default_password' => ['value' => null, 'type' => 'scalar']
+            ]
         );
         // Here you should define the parameters that are allowed to
         // configure your bundle. See the documentation linked above for

@@ -1,16 +1,18 @@
-oro_system_configuration:
+system_configuration:
     groups:
         hex_brain_user_import_settings:
-            icon:   icon-download-alt
+            icon:   download
             title:  'User Import'
         hex_brain_user_import_general_settings:
             title:  'General'
     fields:
         hex_brain_user_import.default_password:
             data_type: string
-            type: text
+            type: Symfony\Component\Form\Extension\Core\Type\TextType
+            search_type: text
             options:
                 label: 'Default Password'
+                tooltip: 'Some additional information'
     tree:
         system_configuration:
             platform:
