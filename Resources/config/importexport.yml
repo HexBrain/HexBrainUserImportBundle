@@ -1,9 +1,9 @@
 parameters:
-    hexbrain_userimport.importexport.strategy.user.class: HexBrain\Bundle\UserImportBundle\ImportExport\Strategy\UserAddOrReplaceStrategy
+    hexbrain_userimport.importexport.strategy.user.class:         HexBrain\Bundle\UserImportBundle\ImportExport\Strategy\UserAddOrReplaceStrategy
 services:
     # Strategy
     oro_user.importexport.strategy.user.add_or_replace:
-        class: %hexbrain_userimport.importexport.strategy.user.class%
+        class: '%hexbrain_userimport.importexport.strategy.user.class%'
         parent: oro_importexport.strategy.configurable_add_or_replace
         arguments:
             - '@oro_config.global'
@@ -15,5 +15,5 @@ services:
              - [setDataConverter, ['@oro_user.importexport.data_converter']]
              - [setStrategy, ['@oro_user.importexport.strategy.user.add_or_replace']]
         tags:
-            - { name: oro_importexport.processor, type: import, entity: %oro_user.entity.class%, alias: oro_user.add_or_replace }
-            - { name: oro_importexport.processor, type: import_validation, entity: %oro_user.entity.class%, alias: oro_user.add_or_replace }
+            - { name: oro_importexport.processor, type: import, entity: '%oro_user.entity.class%', alias: oro_user.add_or_replace }
+            - { name: oro_importexport.processor, type: import_validation, entity: '%oro_user.entity.class%', alias: oro_user.add_or_replace }
